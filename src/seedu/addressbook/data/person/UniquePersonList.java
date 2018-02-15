@@ -20,6 +20,10 @@ import seedu.addressbook.data.exception.DuplicateDataException;
  */
 public class UniquePersonList implements Iterable<Person> {
 
+    public void sort() {
+        Collections.sort(internalList);
+    }
+
     /**
      * Signals that an operation would have violated the 'no duplicates' property of the list.
      */
