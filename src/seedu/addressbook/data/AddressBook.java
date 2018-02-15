@@ -118,9 +118,9 @@ public class AddressBook {
      * Returns a new UniquePersonList of all persons in the address book sorted alphabetically.
      */
     public UniquePersonList getSortedAllPersons() {
-        UniquePersonList sortedList = getAllPersons();
-        sortedList.sort();
-        return sortedList;
+        UniquePersonList sortedListOfPersons = getAllPersons();
+        sortedListOfPersons.sort();
+        return sortedListOfPersons;
     }
 
     /**
