@@ -19,6 +19,8 @@
 || Example: find alice bob charlie
 || list: Displays all persons in the address book as a list with index numbers.
 || Example: list
+|| Sort: Sorts all persons in the address book alphabetically.
+|| Example: sort
 || view: Views the non-private details of the person identified by the index number in the last shown person listing.
 || Parameters: INDEX
 || Example: view 1
@@ -44,6 +46,10 @@
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 
+|| 0 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  sort]
+||
 || 0 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  add wrong args wrong args]
@@ -133,6 +139,80 @@
 || 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
 || 
+|| 5 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Bob p/12345 e/bob@gmail.com a/123, sengkang t/cool t/nice]
+|| New person added: Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+||  6. Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+||
+|| 6 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Captain p/999 e/captain@gmail.com a/222, hougang t/police t/fierce]
+|| New person added: Captain Phone: 999 Email: captain@gmail.com Address: 222, hougang Tags: [police][fierce]
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+||  6. Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+||  7. Captain Phone: 999 Email: captain@gmail.com Address: 222, hougang Tags: [police][fierce]
+||
+|| 7 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  sort]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+|| 	4. Captain Phone: 999 Email: captain@gmail.com Address: 222, hougang Tags: [police][fierce]
+|| 	5. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	6. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	7. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+||
+|| 7 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+||  6. Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+||  7. Captain Phone: 999 Email: captain@gmail.com Address: 222, hougang Tags: [police][fierce]
+||
+|| 7 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  delete 7]
+|| Deleted Person: Captain Phone: 999 Email: captain@gmail.com Address: 222, hougang Tags: [police][fierce]
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+||  6. Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+||
+|| 6 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  delete 6]
+|| Deleted Person: Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+||
 || 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
