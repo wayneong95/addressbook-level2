@@ -21,9 +21,10 @@
   # address book should be emptied
   clear
   list
+  sort
 
 ##########################################################
-# test add person command, setup state for futuer tests
+# test add person command, setup state for future tests
 ##########################################################
 
   # should catch invalid args format
@@ -53,6 +54,26 @@
 
   # should not allow adding duplicate persons
   add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
+
+##########################################################
+# test sort command
+##########################################################
+
+  # adds additional persons to test for sort command
+  add add Bob p/12345 e/bob@gmail.com a/123, sengkang t/cool t/nice
+  list
+  add Captain p/999 e/captain@gmail.com a/222, hougang t/police t/fierce
+  list
+
+  # tests sort command
+  sort
+  list
+
+  # end of tests, delete additional persons
+  delete 7
+  list
+  delete 6
+  list
 
 ##########################################################
 # test view/viewall persons command
