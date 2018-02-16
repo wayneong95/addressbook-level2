@@ -141,6 +141,9 @@
 || 
 || 5 persons listed!
 || ===================================================
+|| Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
+|| This person already exists in the address book
+|| ===================================================
 || Enter command: || [Command entered:  add Bob p/12345 e/bob@gmail.com a/123, sengkang t/cool t/nice]
 || New person added: Bob Phone: 12345 Email: bob@gmail.com Address: 123, sengkang Tags: [cool][nice]
 || ===================================================
@@ -214,9 +217,6 @@
 || 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
 ||
 || 5 persons listed!
-|| ===================================================
-|| Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
-|| This person already exists in the address book
 || ===================================================
 || Enter command: || [Command entered:  view]
 || Invalid command format! 
